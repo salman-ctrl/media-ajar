@@ -22,7 +22,7 @@ const LandingPage = () => {
             />
 
             {/* Tombol dengan Link */}
-            <Link to='/'>
+            <Link to='/home'>
                 <motion.button
                     initial={{ x: 100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}

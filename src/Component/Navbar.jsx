@@ -24,10 +24,10 @@ const Navbar = () => {
                 transition={{ duration: 4 }}
                 className='flex gap-x-10 w-full justify-end pr-16 items-center font-[Poppins]'>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/home'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/home'>Landing Page</Link>
+                    <Link to='/'>Landing Page</Link>
                 </li>
             </motion.ul>
         </motion.div >
