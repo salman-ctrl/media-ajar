@@ -16,7 +16,9 @@ const Home = () => {
                         <FaPlay />
                     </div>
 
-
+                    <div className='p-6 flex flex-col items-center text-center'>
+                        <h2 className='text-lg font-semibold text-white'>Mari Mengenal Warisan Budaya di Sekitar Kita</h2>
+                    </div>
                 </div>
             </div>
         </div>
