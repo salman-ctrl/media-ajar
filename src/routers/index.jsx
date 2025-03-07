@@ -1,15 +1,9 @@
-import React from 'react';
-import { createBrowserRouter } from "react-router-dom";
-import LandingPage from '../Component/LandingPage';
-import Home from '../Component/Home';
+import React from "react";
+import { RouterProvider } from "react-router-dom"; // Tambahkan RouterProvider
+import { router } from "./routes/router"; // Pastikan path-nya benar
 
-export const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <LandingPage />
-    },
-    {
-        path: "/home",
-        element: <Home />
-    }
-]);
+const App = () => {
+    return <RouterProvider router={router} />;
+};
+
+export default App;
