@@ -4,6 +4,7 @@ import bg from '../assets/bg.jpg';
 import { FaPlay } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { MdOutlineClose } from "react-icons/md";
+import bekground from '../assets/bekground.jpg'
 
 const Home = () => {
     const [frame, setFrame] = useState(false);
@@ -21,17 +22,17 @@ const Home = () => {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1 }}
-                    className='h-80 relative w-96 bg-amber-600 rounded-2xl shadow-2xl overflow-hidden flex flex-col hover:scale-110 transition-all duration-700 cursor-pointer'
+                    className='h-80 relative w-96 bg-amber-600 rounded-2xl shadow-4xl overflow-hidden flex flex-col hover:scale-110 transition-all duration-700 cursor-pointer'
                     onClick={() => setFrame(true)}
                 >
-                    <img src={bg} alt="Background" className='h-50 w-full object-cover relative' />
+                    <img src={bekground} alt="Background" className='h-50 w-full object-cover relative' />
                     <div className='inset-0 absolute flex opacity-0 hover:opacity-100 h-full transition-all duration-700 w-full justify-center items-center'>
                         <div className='h-12 w-12 mb-20 bg-black flex justify-center items-center rounded-full'>
                             <FaPlay className='text-lg text-white' />
                         </div>
                     </div>
                     <div className='p-6 flex flex-col items-center text-center'>
-                        <h2 className='text-lg font-semibold font-[Poppins] text-white'>Mari Mengenal Warisan Budaya di Sekitar Kita</h2>
+                        <h2 className='text-lg font-semibold font-[Poppins] text-white'>Mengenal Warisan Budaya di Sekitar Kita</h2>
                     </div>
                 </motion.div>
             </div>
