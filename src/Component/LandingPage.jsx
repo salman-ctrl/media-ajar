@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import bg from '../assets/background.jpg';
 import { GrChapterNext } from "react-icons/gr";
-import { Link } from 'react-router-dom'; // ✅ Perbaikan Import
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 
 const LandingPage = () => {
     const [loaded, setLoaded] = useState(false);
@@ -21,9 +23,13 @@ const LandingPage = () => {
 
             {/* Tombol dengan Link */}
             <Link to='/home'>
-                <button className='absolute flex cursor-pointer shadow-2xl hover:scale-110 transition-all duration-700 items-center gap-x-4 rounded-md px-10 py-4 text-2xl right-5 bottom-12 bg-orange-400 text-white hover:bg-amber-500'>
+                <motion.button
+                    initial={{ x: 100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    className='absolute flex cursor-pointer shadow-2xl hover:scale-110 transition-all duration-700 items-center gap-x-4 rounded-md px-10 py-4 text-2xl right-12 bottom-12 bg-orange-400 text-white hover:bg-amber-500'>
                     Lanjut <GrChapterNext />
-                </button>
+                </motion.button>
             </Link>
         </div>
     );
