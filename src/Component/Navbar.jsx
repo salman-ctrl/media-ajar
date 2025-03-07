@@ -27,7 +27,7 @@ const Navbar = () => {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/landingPage'>Landing Page</Link>
+                    <Link to='/home'>Landing Page</Link>
                 </li>
             </motion.ul>
         </motion.div >
